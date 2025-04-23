@@ -3,80 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nirant Kumbhar | Portfolio</title>
+  <title>Nirant Kumbhar | Power BI Developer</title>
   <style>
     :root {
-      --primary-color: #4e9eff;
-      --accent-color: #fff;
-      --bg-color: #f0f4f8;
-      --card-bg: #ffffff;
-      --text-color: #333;
+      --primary: #0d6efd;
+      --background: #f4f7fa;
+      --card-bg: #fff;
+      --text: #333;
+      --highlight: #0d6efd;
     }
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
       margin: 0;
-      padding: 0;
+      background: var(--background);
+      color: var(--text);
     }
 
     header {
-      background: linear-gradient(135deg, #4e9eff, #005bea);
-      color: var(--accent-color);
+      background: linear-gradient(135deg, #0d6efd, #007bff);
+      color: white;
+      padding: 3rem 1rem 2rem;
       text-align: center;
-      padding: 4rem 1rem 2rem;
     }
 
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      margin: 0;
     }
 
     header p {
       font-size: 1.2rem;
-      margin: 0;
       opacity: 0.9;
     }
 
     .welcome {
-      background: #ffffff;
-      max-width: 600px;
+      background: #fff;
+      max-width: 800px;
       margin: -2rem auto 2rem;
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
       font-size: 1.2rem;
     }
 
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 2rem 1rem;
     }
 
     .card {
       background: var(--card-bg);
-      margin: 1rem 0;
-      padding: 1.5rem;
+      margin: 1.5rem 0;
+      padding: 1.5rem 2rem;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     .card h2 {
-      color: var(--primary-color);
+      color: var(--highlight);
       margin-top: 0;
     }
 
+    ul {
+      padding-left: 1rem;
+    }
+
     footer {
-      background: #eaeaea;
       text-align: center;
       padding: 1rem;
+      background: #e9ecef;
       font-size: 0.9rem;
     }
 
     a {
-      color: var(--primary-color);
+      color: var(--highlight);
       text-decoration: none;
     }
 
@@ -89,37 +92,53 @@
 
   <header>
     <h1>Nirant Kumbhar</h1>
-    <p>Power BI Developer | Tech Enthusiast</p>
+    <p>Power BI Developer | Data Enthusiast | Automation Lover</p>
   </header>
 
   <div class="welcome">
-    👋 Welcome to my website! I’m Nirant Kumbhar, and I love turning data into decisions using Power BI, Azure, and automation tools.
+    👋 Welcome to my website! I'm Nirant, a Power BI Developer with 3+ years of experience turning raw data into actionable insights and interactive dashboards.
   </div>
 
   <section>
     <div class="card">
-      <h2>About Me</h2>
-      <p>I specialize in migrating BI platforms like Qlik to Power BI, creating smart dashboards, and embedding reports with automation. I'm passionate about data storytelling and scalable reporting solutions.</p>
+      <h2>Professional Summary</h2>
+      <p>I'm experienced in designing and optimizing Power BI dashboards, transforming raw data into powerful visuals, and automating business intelligence processes. Proficient in DAX, SQL, Power Query, and multiple data sources like Excel, CSV, SSMS, Postgres, and Salesforce.</p>
     </div>
 
     <div class="card">
-      <h2>Projects</h2>
-      <ul style="list-style: none; padding-left: 0;">
-        <li>📦 <strong>Migration Tool:</strong> Automated Qlik to Power BI migration</li>
-        <li>📊 <strong>Embedded Reporting:</strong> REST API-based Power BI integration</li>
-        <li>⚙️ <strong>Azure Automation:</strong> Resource provisioning with scripts</li>
+      <h2>Project Highlights</h2>
+      <ul>
+        <li><strong>Sales Dashboard (FMCG):</strong> Regional trends & product insights</li>
+        <li><strong>Budget vs Actual (Procurement):</strong> PO tracking & vendor analysis</li>
+        <li><strong>Carbon Emissions (Steel):</strong> CO₂ compliance & monitoring</li>
+        <li><strong>Qlik to Power BI Migration:</strong> 20+ tables with RLS/PLS</li>
+        <li><strong>Marketing Dashboard (Salesforce):</strong> Lead & opportunity tracking</li>
+        <li><strong>Sales Order & Forecast:</strong> Quota vs demand analytics</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Skills & Tools</h2>
+      <ul>
+        <li>📊 Power BI (Reports, Datasets, RLS/PLS)</li>
+        <li>⚙️ DAX, Power Query, SQL, SSMS</li>
+        <li>🔗 Data Sources: SQL Server, Excel, CSV, Postgres, Salesforce</li>
+        <li>🔒 Security: Static & dynamic row-level security</li>
+        <li>📦 ETL, Data Cleansing, Data Modeling</li>
+        <li>🧠 Proofs of Concept (PoC) development</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:nirant@example.com">nirant@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/nirantk" target="_blank">@nirantk</a></p>
+      <p>GitHub: <a href="https://github.com/nirantk" target="_blank">github.com/nirantk</a></p>
+      <p>Location: Mumbai, India</p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Nirant Kumbhar. Built with ❤️ and ☕
+    &copy; 2025 Nirant Kumbhar. Built with ❤️ using HTML & CSS.
   </footer>
 
 </body>
