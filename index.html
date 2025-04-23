@@ -5,140 +5,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nirant Kumbhar | Power BI Developer</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
     :root {
       --primary: #0d6efd;
-      --background: #f4f7fa;
-      --card-bg: #fff;
-      --text: #333;
-      --highlight: #0d6efd;
+      --background: #f9fafe;
+      --text: #222;
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
+      font-family: 'Rubik', sans-serif;
       background: var(--background);
-      color: var(--text);
+      overflow-x: hidden;
+      position: relative;
     }
 
     header {
       background: linear-gradient(135deg, #0d6efd, #007bff);
       color: white;
-      padding: 3rem 1rem 2rem;
       text-align: center;
+      padding: 4rem 1rem 3rem;
+      position: relative;
+      overflow: hidden;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin: 0;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     header p {
       font-size: 1.2rem;
-      opacity: 0.9;
+      opacity: 0.95;
     }
 
-    .welcome {
-      background: #fff;
-      max-width: 800px;
-      margin: -2rem auto 2rem;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-      font-size: 1.2rem;
+    .animated-blob {
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      width: 500px;
+      height: 500px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      animation: blob 30s infinite ease-in-out;
+      z-index: 0;
+      transform: translateX(-50%);
+      filter: blur(60px);
     }
 
-    section {
-      max-width: 900px;
+    @keyframes blob {
+      0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.5);
+      }
+    }
+
+    .container {
+      max-width: 960px;
       margin: auto;
       padding: 2rem 1rem;
+      position: relative;
+      z-index: 1;
     }
 
     .card {
-      background: var(--card-bg);
-      margin: 1.5rem 0;
-      padding: 1.5rem 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      margin: 2rem 0;
     }
 
     .card h2 {
-      color: var(--highlight);
-      margin-top: 0;
+      color: var(--primary);
     }
 
     ul {
-      padding-left: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background: var(--primary);
+      color: white;
     }
 
     footer {
+      background: #f1f1f1;
       text-align: center;
       padding: 1rem;
-      background: #e9ecef;
       font-size: 0.9rem;
-    }
-
-    a {
-      color: var(--highlight);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <div class="animated-blob"></div>
     <h1>Nirant Kumbhar</h1>
-    <p>Power BI Developer | Data Enthusiast | Automation Lover</p>
+    <p>Power BI Developer | Data Visualizer | Automation Enthusiast</p>
+    <a class="resume-btn" href="Nirant.k%20(1)%20(1).pdf" download>📄 Download Resume</a>
   </header>
 
-  <div class="welcome">
-    👋 Welcome to my website! I'm Nirant, a Power BI Developer with 3+ years of experience turning raw data into actionable insights and interactive dashboards.
-  </div>
+  <div class="container">
 
-  <section>
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>Hello 👋 I'm Nirant, a Power BI Developer with over 3 years of experience transforming raw data into smart visual stories. I help businesses make data-driven decisions through interactive dashboards, automation, and BI best practices.</p>
+    </div>
+
     <div class="card">
       <h2>Professional Summary</h2>
-      <p>I'm experienced in designing and optimizing Power BI dashboards, transforming raw data into powerful visuals, and automating business intelligence processes. Proficient in DAX, SQL, Power Query, and multiple data sources like Excel, CSV, SSMS, Postgres, and Salesforce.</p>
+      <p>I'm experienced in designing and optimizing Power BI dashboards, troubleshooting BI systems, implementing security, and creating proof-of-concept reports. I bring clarity from chaos using SQL, Power Query, DAX, and various data connectors.</p>
     </div>
 
     <div class="card">
       <h2>Project Highlights</h2>
       <ul>
-        <li><strong>Sales Dashboard (FMCG):</strong> Regional trends & product insights</li>
-        <li><strong>Budget vs Actual (Procurement):</strong> PO tracking & vendor analysis</li>
-        <li><strong>Carbon Emissions (Steel):</strong> CO₂ compliance & monitoring</li>
-        <li><strong>Qlik to Power BI Migration:</strong> 20+ tables with RLS/PLS</li>
-        <li><strong>Marketing Dashboard (Salesforce):</strong> Lead & opportunity tracking</li>
-        <li><strong>Sales Order & Forecast:</strong> Quota vs demand analytics</li>
+        <li><strong>Sales Dashboard (FMCG):</strong> Revenue, trends & regional analysis</li>
+        <li><strong>Budget vs Actual (Procurement):</strong> Vendor & cost tracking</li>
+        <li><strong>Carbon Emission (Steel):</strong> CO₂ tracking with compliance</li>
+        <li><strong>Qlik to Power BI Migration:</strong> 20+ tables, RLS/PLS setup</li>
+        <li><strong>Marketing MOR (Salesforce):</strong> Leads & conversion insights</li>
+        <li><strong>Quota vs Demand (Manufacturing):</strong> Forecasting insights</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Skills & Tools</h2>
       <ul>
-        <li>📊 Power BI (Reports, Datasets, RLS/PLS)</li>
-        <li>⚙️ DAX, Power Query, SQL, SSMS</li>
-        <li>🔗 Data Sources: SQL Server, Excel, CSV, Postgres, Salesforce</li>
-        <li>🔒 Security: Static & dynamic row-level security</li>
-        <li>📦 ETL, Data Cleansing, Data Modeling</li>
-        <li>🧠 Proofs of Concept (PoC) development</li>
+        <li>Power BI, DAX, Power Query, SQL Server</li>
+        <li>ETL & data cleansing, dashboard automation</li>
+        <li>Data sources: Excel, CSV, SSMS, Salesforce, Postgres</li>
+        <li>Security: Static/Dynamic RLS, object-level access</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:nirantk83@gmail.com">nirantk83@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/nirantk83" target="_blank">github.com/nirantk83</a></p>
+      <p>GitHub: <a href="https://github.com/nirantk83" target="_blank">@nirantk83</a></p>
       <p>Location: Mumbai, India</p>
     </div>
-  </section>
+
+  </div>
 
   <footer>
-    &copy; 2025 Nirant Kumbhar. Built with ❤️ using HTML & CSS.
+    &copy; 2025 Nirant Kumbhar. Built with ❤️ using HTML, CSS & a little magic.
   </footer>
 
 </body>
