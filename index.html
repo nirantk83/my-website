@@ -5,20 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nirant Kumbhar | Power BI Developer</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
     :root {
       --primary: #0d6efd;
-      --background: #f9fafe;
-      --text: #222;
+      --bg: #f2f6fa;
+      --text: #1c1c1c;
+      --card-bg: rgba(255, 255, 255, 0.7);
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      font-family: 'Rubik', sans-serif;
-      background: var(--background);
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
       overflow-x: hidden;
-      position: relative;
     }
 
     header {
@@ -33,26 +39,27 @@
     header h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      margin-top: 0;
       opacity: 0.95;
     }
 
     .animated-blob {
       position: absolute;
-      top: -100px;
+      top: -120px;
       left: 50%;
       width: 500px;
       height: 500px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.15);
       border-radius: 50%;
-      animation: blob 30s infinite ease-in-out;
+      animation: blob 25s infinite ease-in-out;
       z-index: 0;
       transform: translateX(-50%);
-      filter: blur(60px);
+      filter: blur(80px);
     }
 
     @keyframes blob {
@@ -60,32 +67,41 @@
         transform: translate(-50%, -50%) scale(1);
       }
       50% {
-        transform: translate(-50%, -50%) scale(1.5);
+        transform: translate(-50%, -50%) scale(1.4);
       }
     }
 
     .container {
-      max-width: 960px;
+      max-width: 1000px;
       margin: auto;
-      padding: 2rem 1rem;
+      padding: 2rem 1.5rem;
       position: relative;
       z-index: 1;
     }
 
     .card {
-      background: white;
-      border-radius: 12px;
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 16px;
       padding: 2rem;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
       margin: 2rem 0;
+      box-shadow: 0 8px 30px var(--shadow);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px var(--shadow);
     }
 
     .card h2 {
       color: var(--primary);
+      margin-top: 0;
     }
 
     ul {
-      padding-left: 1.2rem;
+      padding-left: 1.5rem;
     }
 
     .resume-btn {
@@ -93,24 +109,36 @@
       background: white;
       color: var(--primary);
       border: 2px solid var(--primary);
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
+      padding: 0.6rem 1.4rem;
+      border-radius: 50px;
       text-decoration: none;
       font-weight: 600;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
     }
 
     .resume-btn:hover {
       background: var(--primary);
       color: white;
+      transform: scale(1.05);
     }
 
     footer {
-      background: #f1f1f1;
+      background: #e9ecef;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -124,7 +152,6 @@
   </header>
 
   <div class="container">
-
     <div class="card">
       <h2>Welcome</h2>
       <p>Hello 👋 I'm Nirant, a Power BI Developer with over 3 years of experience transforming raw data into smart visual stories. I help businesses make data-driven decisions through interactive dashboards, automation, and BI best practices.</p>
@@ -132,7 +159,7 @@
 
     <div class="card">
       <h2>Professional Summary</h2>
-      <p>I'm experienced in designing and optimizing Power BI dashboards, troubleshooting BI systems, implementing security, and creating proof-of-concept reports. I bring clarity from chaos using SQL, Power Query, DAX, and various data connectors.</p>
+      <p>Skilled in designing and optimizing Power BI dashboards, implementing data security, and building efficient data models using SQL, DAX, and Power Query. Experienced with integrating data from sources like Excel, Postgres, and Salesforce.</p>
     </div>
 
     <div class="card">
@@ -163,11 +190,10 @@
       <p>GitHub: <a href="https://github.com/nirantk83" target="_blank">@nirantk83</a></p>
       <p>Location: Mumbai, India</p>
     </div>
-
   </div>
 
   <footer>
-    &copy; 2025 Nirant Kumbhar. Built with ❤️ using HTML, CSS & a little magic.
+    &copy; 2025 Nirant Kumbhar. Built with ❤️ using HTML, CSS & a sprinkle of creativity.
   </footer>
 
 </body>
